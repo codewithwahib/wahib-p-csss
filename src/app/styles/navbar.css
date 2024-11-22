@@ -1,0 +1,65 @@
+/* Container for the navbar */
+.navbar-container {
+  position: relative; /* Ensure proper stacking context */
+  padding-top: 2rem; /* Equivalent to pt-8 */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1000; /* High z-index to bring it forward */
+}
+
+/* Flex container for navbar items */
+.navbar-flex {
+  display: flex;
+  justify-content: space-between; /* Equivalent to justify-between */
+  align-items: center; /* Equivalent to items-center */
+}
+
+/* Branding text */
+.navbar-brand {
+  font-size: 1.25rem; /* Equivalent to text-xl */
+  color: red;
+  font-weight: 700; /* Equivalent to font-large */
+}
+
+/* Navbar links styling */
+.navbar-links {
+  display: flex;
+  gap: 2.5rem; /* Equivalent to gap-10 */
+  color:red ;
+  z-index: 1000; /* Ensure links are above #a9e5bbf other elements */
+}
+
+/* Navbar link items */
+.navbar-links li {
+  list-style: none;
+  margin-right: 20px; /* Moves each link 20px to the right */
+}
+
+/* Navbar links appearance */
+.navbar-links a {
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit; /* Ensure color matches the surrounding text */
+}
+
+.navbar-links .menuLink a:hover {
+  color: #7689de; /* Example hover color */
+}
+
+/* Mobile menu visibility (media query for large screens) */
+@media (max-width: 1024px) {
+  .navbar-links {
+      display: none; /* Hidden by default on smaller screens */
+  }
+
+  .navbar-menu-icon {
+      display: block; /* Mobile menu icon visible */
+  }
+}
+
+/* Menu icon for mobile */
+.navbar-menu-icon {
+  z-index: 1000; /* Bring the menu icon forward */
+  cursor: pointer; /* Change cursor to pointer */
+}
