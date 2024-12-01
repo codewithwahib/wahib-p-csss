@@ -13,7 +13,7 @@ const Contact = () => {
             Send me a message and I will try to respond soon.
           </p>
           <div className="flex gap-3 items-center" data-aos="zoom-in-left">
-            <MdAlternateEmail size={30} /> wahib232@gmail.com
+            <MdAlternateEmail size={30} /> wahibjaffer0523@gmail.com
           </div>
           <div className="flex gap-3 items-center" data-aos="zoom-in-left">
             <BiPhoneCall size={30} /> 03XX-XXXXXXX

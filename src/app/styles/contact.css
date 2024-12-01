@@ -46,7 +46,7 @@
   input, textarea {
     height: 40px; /* Equivalent to h-[40px] */
     background-color: transparent;
-    border: 1px solid red; /* Accent color (replace with your color code) */
+    border: 1px solid #7689de; /* Accent color (replace with your color code) */
     padding: 0.5rem;
     color: #fff; /* Text color */
   }
@@ -58,14 +58,14 @@
   }
   
   button {
-    background-color: red; /* Accent color */
+    background-color: #7689de; /* Accent color */
     padding: 0.5rem 1.5rem;
     border: none;
     cursor: pointer;
   }
   
   button:hover {
-    background-color: #e6891f; /* Darker shade of the accent color for hover effect */
+    background-color: #7689de; /* Darker shade of the accent color for hover effect */
   }
   
   /* Hover effect for icons */

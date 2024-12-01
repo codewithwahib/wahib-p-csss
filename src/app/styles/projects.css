@@ -31,7 +31,7 @@
   
   /* Styling for the card hover effect */
   .card-hover:hover {
-    outline: 2px solid rgb(182, 3, 3); /* Light blue outline */
+    outline: 2px solid #add8e6; /* Light blue outline */
     transition: all 0.3s ease-in-out; /* Smooth transition */
   }
   

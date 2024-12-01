@@ -2,10 +2,10 @@
 #hero {
   position: relative;
   min-height: 100vh; /* Full screen height */
+  background-image: url('/profile2.jpg'); /* Background image */
   background-repeat: no-repeat;
-  background-size: cover; /* Adjust image size */
-  background-position: left 100px top 200px; /* Position background properly */
-  z-index: 3; /* Ensure it stays above other layers */
+  background-size: 35%;
+  background-position: left 100px top 200px; /* Position image properly */
 }
 
 /* Overlay for dark effect */
@@ -15,8 +15,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #a9e5bbff; /* Semi-transparent overlay */
-  z-index: 2; /* Ensure it sits below the profile picture and text */
+  background-color: rgba(0, 0, 0, 0.3); /* Black overlay with opacity */
+  z-index: 1; /* Ensure it sits below content */
 }
 
 /* Hero container for layout */
@@ -24,14 +24,14 @@
   display: grid;
   grid-template-columns: 1fr; /* Single column by default */
   height: calc(100vh - 60px); /* Full height minus navbar height */
+  z-index: 10; /* Above overlay */
   position: relative;
-  z-index: 4; /* Above overlay */
 }
 
 /* Large screen styling */
 @media (min-width: 1024px) {
   .hero-container {
-    grid-template-columns: repeat(2, 1fr); /* Two columns on large screens */
+      grid-template-columns: repeat(2, 1fr); /* Two columns on large screens */
   }
 }
 
@@ -43,10 +43,10 @@
   align-items: flex-end; /* Align text to the right */
   padding-right: 50px; /* Add space on the right */
   padding-top: 100px; /* Add space on top to push text down */
-  color: red; /* Orange text color */
+  color: #7689de; /* Orange text color */
   text-align: right; /* Align text inside the container */
   font-family: Arial, sans-serif; /* Clean font */
-  z-index: 5; /* Ensure text appears above the image and overlay */
+  z-index: 2; /* Ensure text appears above overlay */
 }
 
 /* Text styles */
@@ -55,19 +55,18 @@
   line-height: 1.2; /* Line spacing */
   font-weight: bold; /* Bold font */
   margin: 0; /* Remove default margin */
-  color: red; /* Orange text color */
+  color: #7689de; /* Orange text color */
 }
-
 /* Responsive Text Adjustments */
 @media (min-width: 640px) {
   .hero-text p {
-    font-size: 5rem; /* Larger font size on medium screens */
+      font-size: 5rem; /* Larger font size on medium screens */
   }
 }
 
 @media (min-width: 1024px) {
   .hero-text p {
-    font-size: 6rem; /* Even larger font size on large screens */
+      font-size: 6rem; /* Even larger font size on large screens */
   }
 }
 
@@ -78,6 +77,8 @@
 
 @media (min-width: 1024px) {
   .hidden-lg {
-    display: block; /* Show on large screens */
+      display: block; /* Show on large screens */
   }
 }
+
+

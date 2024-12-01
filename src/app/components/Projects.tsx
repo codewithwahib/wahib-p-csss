@@ -6,27 +6,27 @@ import "@/app/styles/projects.css"
 const data = [
   {
     id: "0",
-    title: "Blog Website",
-    desc: "Showcasing my journey, projects, and insights—welcome to my personal blog and portfolio.",
-    img: "/blog.png",
+    title: "Task Manager",
+    desc: "Efficiently streamlined workflows and enhanced productivity with a user-friendly Task Manager application.",
+    img: "/task.png",
   },
   {
     id: "1",
-    title: "Streaming Platform",
-    desc: "Your gateway to endless entertainment—stream movies, shows, and live events anytime, anywhere!",
-    img: "/download.png",
-  },
-  {
-    id: "2",
     title: "Weather Application",
-    desc: "Stay ahead of the skies with real-time forecasts and weather updates—your reliable weather companion!",
+    desc: "Developed a dynamic Weather App delivering real-time forecasts with a sleek and intuitive interface.",
     img: "/image.png",
   },
   {
+    id: "2",
+    title: "Music Player",
+    desc: "Created an interactive music player with album art display and custom playlists.",
+    img: "/download.png",
+  },
+  {
     id: "3",
-    title: "Task Manager",
-    desc: "Organize, prioritize, and conquer your day with ease—your ultimate task management solution!",
-    img: "/task.png",
+    title: "Blog Website",
+    desc: "Designed and developed a responsive Blog Website with dynamic content management and engaging user experience.",
+    img: "/blog.png",
   },
 ];
 
